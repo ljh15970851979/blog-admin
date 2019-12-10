@@ -8,6 +8,7 @@ import "@/assets/css/global.styl";
 // import BaiduMap from 'vue-baidu-map'
 import VueSocketIO from 'vue-socket.io'
 
+// 这是websoket的
 Vue.use(new VueSocketIO({
 	debug: true,
 	connection: 'http://lizhch.cn:3000/websocket/robot',  //
