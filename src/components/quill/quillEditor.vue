@@ -24,8 +24,8 @@
 </template>
 
 <script>
-	// import upload from '@/utils/api/upload'
-	import upload from '@/utils/api/uploadOss'
+	import upload from '@/utils/api/upload'
+	// import upload from '@/utils/api/uploadOss'
 
 	import Quill from 'quill'
 	import {quillEditor} from "vue-quill-editor";
@@ -143,11 +143,11 @@
 				// loading动画消失
 				this.quillUpdateImg = false
                 // 上传到服务器
-				// upload.upload(e, func_s, func_f);
+				upload.upload(e, func_s, func_f);
                 // 上传到阿里云前端签名上传
 				// upload.uploadOss(e, func_s, func_f);
 				// 上传到阿里云服务器上传
-				upload.uploadFile(e, func_s, func_f);
+				// upload.uploadFile(e, func_s, func_f);
 			},
 			beforeQuillrUpload: function (file) {
 				// 显示loading动画

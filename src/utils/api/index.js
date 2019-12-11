@@ -2,18 +2,12 @@
 import axios from 'axios'
 
 let BASE_URL = process.env.VUE_APP_API;
-// axios.defaults.baseURL = BASE_URL;
-axios.defaults.baseURL = '/api/api/v1/';
+axios.defaults.baseURL = BASE_URL;
+// axios.defaults.baseURL = '/api/api/v1/';
 
 // axios.defaults.withCredentials = true;
 
 axios.defaults.timeout = 30000;
-
-// // 验证 方法 'Basic ' + Base64.encode('Username:' + token + 'Password:')
-// axios.defaults.headers.common['Authorization'] = token;
-
-
-// axios.defaults.headers.post['Content-Type'] = 'application/x-www-form-urlencoded';
 
 
 const post = (apiURL, params, resolve, reject) => {
